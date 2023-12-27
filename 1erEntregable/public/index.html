@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tienda Manolo</title>
+</head>
+<body>
+    <h1>Compre barato, pague tras pasado mañana</h1>
+    <img src="/img/susuwataris.png" alt="susuwataris" width="50%" height="50%">
+    <form method="post" action="/api/products" enctype="multipart/form-data">
+      <input type="text" name="title" placeholder="producto">
+      <textarea type="text" name="descripción" placeholder="descripcion"></textarea>
+      <input type="text" name="code" placeholder="código">
+      <input type="number" name="price" placeholder="precio">
+      <select name="status">
+        <option value="True">Existe</option>
+        <option value="False">No existe</option>
+      </select>
+      <input type="number" name="stock" placeholder="stock">
+      <input type="text" name="category" placeholder="categoría">
+      <input type="file" name="file">
+      <button type="submit">Ingresar</button>
+    </form>
+</body>
+</html>
