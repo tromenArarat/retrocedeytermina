@@ -2,7 +2,7 @@ const url = 'https://api.football-data.org/v4/competitions/CL/matches';
 const options = {
 	method: 'GET',
 	headers: {
-		'X-RapidAPI-Key': '73464944d9f94a8e99245ec4c4449b65'
+		'X-RapidAPI-Key': '????'
 	}
 };
 
