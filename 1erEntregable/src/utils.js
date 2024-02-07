@@ -1,6 +1,6 @@
 import multer from 'multer';
 
-const currentDir = '/Users/Daniel/Documents/PROGRAMACION/CODECASA/clase8/entregable'; 
+const currentDir = '/suRuta'; 
 
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
