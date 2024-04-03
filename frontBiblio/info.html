@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre el libro</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/fa04600604.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Lato:ital@1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </a></li>
+                <li>
+                    <h1>Sobre el libro</h1>
+                </li>
+                <li><a href="#">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="img-container">
+            <img src="./public/img/mobydick.jpg" alt="tapa del libro" class="full-width">
+        </div>
+        
+        
+        <div class="contenedorData-principal">
+            <div class="book-info">
+                <h1>Moby Dick</h1>
+                <h3>por Herman Melville</h3>
+            </div>
+            <div class="status">
+                <h3>Prestado</h3>
+            </div>
+        </div>
+        
+
+            <div class="contenedorData-secundaria">
+
+                <div class="anio">
+                    <div class="anio1">
+                        <h4>Año</h4>
+                        <div class="anio2">
+                            <h3>1851</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="paginas">
+                    <div class="paginas-1">
+                        <h4>Páginas</h4>
+                        <div class="paginas-2">
+                            <h3>704</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="categoria">
+                    <div class="categoria1">
+                        <h4>Categoría</h4>
+                        <div class="categoria2">
+                            <h3>Clásicos</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cssero">
+                
+                <div class="etiquetas">
+                    <ul>
+                        <li>
+                            <a href="#" onmouseover="mostrarSeccion('resenia')">Reseña</a>
+                        </li>
+                        <li>
+                            <a href="#" onmouseover="mostrarSeccion('detalle')">Detalle</a>
+                        </li>
+                        <li>
+                            <a href="#" onmouseover="mostrarSeccion('autores')">Autores</a>
+                        </li>
+                        <li>
+                            <a href="#" onmouseover="mostrarSeccion('lectores')">Lectores</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="textArea">
+
+                    <div class="resenia">
+                        <p>Un caníbal y una ballena se debaten entre quién se come primero al narrador de la historia,
+                            del que no sabemos nada hasta que empezamos a leer.</p>
+                    </div>
+
+                    <div class="detalle">
+                        <div class="isbn">
+                            <p>Isbn:</p>
+                        </div>
+                        <div class="editorial">
+                            <p>Editorial:</p>
+                        </div>
+                        <div class="infoAdicional">
+                            <p>Información adicional:</p>
+                        </div>
+                    </div>
+
+                    <div class="autores">
+                        <p>Herman Mellville es el escritor de esta novela para lo cual tuvo que saber mucho sobre la
+                            realidad.</p>
+                    </div>
+
+                    <div class="lectores">
+                        <p>Lectores anteriores de esta novela, que deciden compartir su biblioteca:</p>
+                        <p><br></p>
+                        <p>Tomás</p>
+                    </div>
+                </div>
+            
+            </div>
+            <div class="container">
+                <button class="btn">
+                    ¿De qué sirve leer?
+                </button>
+                <button class="btn1">
+                    Seleccionar libro
+                </button>
+            </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
