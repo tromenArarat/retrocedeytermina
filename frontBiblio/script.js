@@ -9,3 +9,7 @@ function mostrarSeccion(nombreSeccion) {
         seccionAmostrar.style.display = 'flex';
     }
 }
+
+window.addEventListener('load', function() {
+    mostrarSeccion('reseña');
+});

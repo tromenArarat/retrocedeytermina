@@ -72,70 +72,7 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
-/* animaciones del botón */
-.container{
-    display: flex;
-    justify-content: center; /*horizontal*/
-    align-items: center; /*vertical*/
-    height:100vh;
-}
-.btn{
-    padding:10px 20px;
-    font-family: var(--primary-font);
-    font-size: 1rem;
-    background-color: var(--primary-color);
-    color: var(--primary-black-text);
-    border: none;
-    border-radius: 5px;
-    transition: var(--secondary-color) 0.3s;
-}
-.btn:hover{
-    background-color: var(--bg-input-color);
-}
-.btn1{
-    padding:10px 20px;
-    font-family: var(--primary-font);
-    font-size: 1rem;
-    background-color: var(--primary-color);
-    color: var(--primary-black-text);
-    border: none;
-    border-radius: 5px;
-    transition: var(--secondary-color) 0.3s;
-}
-.btn1:hover{
-    background-color: var(--bg-input-color);
-}
 
-/* animaciones */
-@keyframes pulso{
-    /* dividir en porcentajes */
-    /* 0% estado actual */
-    0% {
-        /*  > 1 achica 
-            < 1 agrandar */
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.1);
-    }
-    100%{
-        transform: scale(1);
-    }
-}
-
-.btn:hover{
-    /*  primer parámetro:nombre de la animación
-                         que queremos que se active,
-        2do parámetro: tiempo que va a durar una 
-                       sola secuencia,
-        3do parámetro: cómo será la repetición,
-        4to parámetro: ?
-    */
-    animation: pulso 0.4s  infinite alternate;
-}
-.btn1:hover{
-    animation: pulso 0.6s  infinite alternate;
-}
 
 main {
     display: flex;
@@ -193,14 +130,14 @@ main {
 .contenedorData-secundaria > div {
     flex-grow: 1; 
     display: flex;
-    justify-content: center; 
+    justify-content: space-between; 
 }
 
 .contenedorData-secundaria > div > div {
     border: 1px solid var(--secondary-color); 
     border-radius: 15px; 
     border-color: var(--primary-color);
-    padding: 0.1rem 3rem; 
+    padding: 1rem 4rem; 
     text-align: center;
 }
 
@@ -212,7 +149,7 @@ main {
 .cssero {
     width: 80%;
     margin-top: 20px;
-    text-decoration: none; 
+    text-decoration: none;
     font-family: var(--secondary-font);
 }
 
@@ -223,8 +160,14 @@ main {
     display: inline-block;
     justify-content: space-between;
 }
-
-
+.cssero .textArea{
+    width: 78vw;
+    height: 30vh;
+    text-align: justify;
+}
+.cssero .textArea .lectores{
+    flex-direction: column;
+}
 
 .etiquetas {
     width: 100%; 
@@ -242,6 +185,74 @@ main {
 .etiquetas ul li a:hover {
     border-bottom: 1px solid var(--primary-color); 
 }
+
+/* animaciones del botón */
+.container{
+    width: 80%;
+    display: flex;
+}
+button{
+    justify-content: space-between;
+}
+.btn{
+    width: 100%;
+    font-family: var(--primary-font);
+    font-size: 1rem;
+    background-color: var(--primary-color);
+    color: var(--primary-black-text);
+    border: none;
+    border-radius: 5px;
+    transition: var(--secondary-color) 0.3s;
+}
+.btn:hover{
+    background-color: var(--bg-input-color);
+}
+.btn1{
+    width: 100%;
+    padding:10px 20px;
+    font-family: var(--primary-font);
+    font-size: 1rem;
+    background-color: var(--primary-color);
+    color: var(--primary-black-text);
+    border: none;
+    border-radius: 5px;
+    transition: var(--secondary-color) 0.3s;
+}
+.btn1:hover{
+    background-color: var(--bg-input-color);
+}
+
+/* animaciones */
+@keyframes pulso{
+    /* dividir en porcentajes */
+    /* 0% estado actual */
+    0% {
+        /*  > 1 achica 
+            < 1 agrandar */
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.btn:hover{
+    /*  primer parámetro:nombre de la animación
+                         que queremos que se active,
+        2do parámetro: tiempo que va a durar una 
+                       sola secuencia,
+        3do parámetro: cómo será la repetición,
+        4to parámetro: ?
+    */
+    animation: pulso 0.4s  infinite alternate;
+}
+.btn1:hover{
+    animation: pulso 0.6s  infinite alternate;
+}
+
 /*
 Colors -
 
