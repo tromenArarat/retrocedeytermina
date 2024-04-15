@@ -253,7 +253,37 @@ button{
     animation: pulso 0.6s  infinite alternate;
 }
 
+/* media queries */
+/* @media only screen and (max-width:600px){
+    .container{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .item{
+        width: 100px;
+        height: 100px;
+        border: none;
+        background-color: coral;
+    }
+} */
+/* @media only screen and (min-width:601px) and (max-width:980px){
+    .container{
+        background-color: beige;
+        align-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .item{
+        width:150px;
+        height: 150px;
+        background-color: chartreuse;
+    }
+
+} */
+
+
 /*
+
+
 Colors -
 
 (Dark Charcoal) #2F2F2F - 
